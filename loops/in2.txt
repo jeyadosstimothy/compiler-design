@@ -1,0 +1,5 @@
+do{
+	do{
+		abc;
+	}while(j<m);
+}while(i<n);

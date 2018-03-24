@@ -1,0 +1,23 @@
+{
+	int a[10], b[10][20], c[50], i, j, k, l;
+	float x;
+	{
+		char h='s';
+		float d;
+		while(d<100){
+			a[i] = a[i-1]+1;
+		}
+	}
+	{
+		if(j==0){
+			i=i*2;
+		}
+		else{
+			j=j+1;
+		}
+	}
+	while(!(i<k && k<l && i<j)){
+		a[i] = b[i][j+k]*c[l];
+	}
+	i=j+2;
+}

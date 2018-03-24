@@ -1,0 +1,19 @@
+
+	int a,b,c;
+	float d[10][20],e[10][20];
+	a=b+c;
+	if ( a < d[b+c][2])
+	{
+		a=b+c;
+		while( a<b )
+		{
+			c=c+a;
+		}
+	}
+	else
+	{
+		int x,y;
+		x=y+y;
+	}
+	a=e[4][3]*c;
+	a=0;

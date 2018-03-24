@@ -1,0 +1,23 @@
+for(int i=0;i<n;i++)
+{
+	abc;
+	for(int j=0;j<n;j++)
+	{
+		do
+		{
+			cde;
+			efg;
+		}
+		while(c<d);
+	}
+	fgh;
+}
+do{
+	def;
+	do{
+		for(int j=0;j<n;j++)
+		{
+			fhkl;
+		}
+	}while(efg);
+}while(i<n);

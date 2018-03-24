@@ -1,0 +1,10 @@
+{
+	int a[10], b, i, j, k;
+	{
+		float d;
+		while(d<100){
+			a[i] = a[i-1]+1;
+		}
+	}
+	i=j+k;
+}
