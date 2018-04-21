@@ -1680,8 +1680,6 @@ int yywrap()
 int main(void)
 {
 	yyparse();
-	postOrder(synTree);
-	/*
 	cout<<"Post Order:"<<endl;
 	postOrder(synTree);
 	cout<<endl;
@@ -1690,5 +1688,4 @@ int main(void)
 	cout<<"Number of Available Registers: "<<n<<endl;
 	cout<<"Assembly:"<<endl;
 	genAssembly(synTree,n);
-	*/
 }

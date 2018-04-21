@@ -444,8 +444,8 @@ static const yytype_uint8 yytranslate[] =
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    19,    19,    20,    20,    20,    20,    21,    21,    22,
-      24,    23
+       0,    20,    20,    21,    21,    21,    21,    22,    22,    23,
+      25,    24
 };
 #endif
 
@@ -1228,37 +1228,37 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-#line 19 "for.y" /* yacc.c:1646  */
+#line 20 "for.y" /* yacc.c:1646  */
     {cout<<s<<endl;}
 #line 1234 "for.tab.c" /* yacc.c:1646  */
     break;
 
   case 6:
-#line 20 "for.y" /* yacc.c:1646  */
+#line 21 "for.y" /* yacc.c:1646  */
     {}
 #line 1240 "for.tab.c" /* yacc.c:1646  */
     break;
 
   case 7:
-#line 21 "for.y" /* yacc.c:1646  */
-    {s=s+(yyvsp[-6].str)+";\nwhile("+(yyvsp[-4].str)+")"+(yyvsp[0].str)+"\n";}
+#line 22 "for.y" /* yacc.c:1646  */
+    {s=s+(yyvsp[-6].str)+";\nwhile("+(yyvsp[-4].str)+"){\n";}
 #line 1246 "for.tab.c" /* yacc.c:1646  */
     break;
 
   case 8:
-#line 21 "for.y" /* yacc.c:1646  */
-    {s=s+(yyvsp[-5].str)+";\n"+(yyvsp[0].str);}
+#line 22 "for.y" /* yacc.c:1646  */
+    {s=s+(yyvsp[-5].str)+";\n}";}
 #line 1252 "for.tab.c" /* yacc.c:1646  */
     break;
 
   case 9:
-#line 22 "for.y" /* yacc.c:1646  */
+#line 23 "for.y" /* yacc.c:1646  */
     {s=s+(yyvsp[-1].str)+(yyvsp[0].str);}
 #line 1258 "for.tab.c" /* yacc.c:1646  */
     break;
 
   case 10:
-#line 24 "for.y" /* yacc.c:1646  */
+#line 25 "for.y" /* yacc.c:1646  */
     {
 				onemore.push_back(s.length());
 				s=s+"\nwhile(";
@@ -1268,7 +1268,7 @@ yyreduce:
     break;
 
   case 11:
-#line 30 "for.y" /* yacc.c:1646  */
+#line 31 "for.y" /* yacc.c:1646  */
     {
 				x=start.back()+s.substr(start.back()).length();
 				s.insert(onemore.back(),s.substr(start.back()));
@@ -1511,7 +1511,7 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 40 "for.y" /* yacc.c:1906  */
+#line 41 "for.y" /* yacc.c:1906  */
 
 
 void yyerror(char *s)
