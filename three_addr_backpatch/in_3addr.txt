@@ -1,0 +1,11 @@
+if d < 100 goto 2
+goto 9
+t0 = i * 4
+t1 = i - 1
+t2 = t1 * 4
+t3 = a[t2]
+t4 = t3 + 1
+a[t0] = t4
+goto 0
+t5 = j + k
+i = t5

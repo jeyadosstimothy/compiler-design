@@ -788,6 +788,12 @@ ll to_int(string val)
 	ss>>x;
 	return x;
 }
+void readThreeAddress(int start=0)
+{
+	string inst;
+	while(getline(cin,inst))
+		instList[start++]=inst;
+}
 void yyerror(char* s)
 {
 	cout<<s<<endl;
@@ -797,6 +803,7 @@ int main()
 {
 	setWidths();
 	yyparse();
+	//readThreeAddress();
 	printTable();
 	displayInst();
 	genBasicBlock();
@@ -805,6 +812,7 @@ int main()
 	displayFlowGraph();
 	//comment the following if the code has control statements
 	//use only with no control flows
+	
 	genDAG();
 	displayDAG();
 	genThreeAddr();

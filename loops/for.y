@@ -19,7 +19,7 @@
 %%
 ss: 	s {cout<<s<<endl;}
 s:		for s | stmt s | dwhile s| {};
-for:	FOR OP TEXT SC TEXT SC TEXT CL OP1 {s=s+$3+";\nwhile("+$5+")"+$9+"\n";} s CL1 {s=s+$7+";\n"+$12;};
+for:	FOR OP TEXT SC TEXT SC TEXT CL OP1 {s=s+$3+";\nwhile("+$5+"){\n";} s CL1 {s=s+$7+";\n}";};
 stmt:	TEXT SC {s=s+$1+$2;};
 dwhile: DO OP1 
 			{
